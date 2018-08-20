@@ -1,0 +1,3 @@
+for f in `seq 0 5`; do echo $f; ssh ubuntu@eecolidar$f.eecolidar-nlesc.surf-hosted.nl "echo -n > /home/ubuntu/normalisation_scripts/normalisation_list_$f.txt; ls -l /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/ >> /home/ubuntu/normalisation_scripts/normalisation_list_$f.txt"; done; \
+for f in `seq 0 5`; do echo $f; scp ubuntu@eecolidar$f.eecolidar-nlesc.surf-hosted.nl:/home/ubuntu/normalisation_scripts/normalisation_list_$f.txt ../; done; \
+for f in `seq 0 5`; do echo $f; ssh ubuntu@eecolidar$f.eecolidar-nlesc.surf-hosted.nl "rm /home/ubuntu/normalisation_scripts/normalisation_list_$f.txt;"; done;

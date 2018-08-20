@@ -1,0 +1,3 @@
+for f in `seq 0 5`; do echo $f; ssh ubuntu@eecolidar$f.eecolidar-nlesc.surf-hosted.nl "echo -n > /home/ubuntu/feature_scripts/feature_list_$f.txt; ls -l /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/ >> /home/ubuntu/feature_scripts/feature_list_$f.txt"; done; \
+for f in `seq 0 5`; do echo $f; scp ubuntu@eecolidar$f.eecolidar-nlesc.surf-hosted.nl:/home/ubuntu/feature_scripts/feature_list_$f.txt ../; done; \
+for f in `seq 0 5`; do echo $f; ssh ubuntu@eecolidar$f.eecolidar-nlesc.surf-hosted.nl "rm /home/ubuntu/feature_scripts/feature_list_$f.txt;"; done;
