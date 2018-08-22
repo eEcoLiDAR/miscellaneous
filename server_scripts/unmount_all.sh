@@ -1,1 +1,1 @@
-for f in `seq 0 5`; do echo $f; ssh ubuntu@eecolidar$f.eecolidar-nlesc.surf-hosted.nl "/home/ubuntu/umount.sh"; done
+for f in `seq 0 5`; do echo "Unmounting WebDAV from server $f"; ssh ubuntu@eecolidar$f.eecolidar-nlesc.surf-hosted.nl "/home/ubuntu/umount.sh"; done;

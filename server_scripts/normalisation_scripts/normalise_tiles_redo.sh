@@ -1,59 +1,59 @@
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_105_161.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_105_161.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_106_174.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_106_174.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_106_175.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_106_175.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_114_187.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_114_187.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_117_173.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_117_173.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_121_141.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_121_141.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_121_173.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_121_173.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_121_175.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_121_175.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_122_140.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_122_140.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_125_195.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_125_195.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_125_199.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_125_199.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_127_146.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_127_146.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_127_158.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_127_158.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_128_179.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_128_179.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_129_136.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_129_136.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_130_159.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_130_159.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_131_134.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_131_134.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_131_149.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_131_149.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_132_134.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_132_134.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_132_157.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_132_157.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_134_154.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_134_154.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_135_110.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_135_110.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_135_153.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_135_153.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_137_137.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_137_137.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_137_140.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_137_140.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_137_200.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_137_200.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_137_201.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_137_201.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_138_140.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_138_140.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_138_167.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_138_167.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_138_202.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_138_202.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_139_118.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_139_118.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_139_140.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_139_140.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_140_141.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_140_141.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_141_142.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_141_142.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_142_154.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_142_154.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_145_144.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_145_144.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_149_120.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_149_120.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_150_201.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_201.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_154_114.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_154_114.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_155_201.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_155_201.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_63_94.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_63_94.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_65_89.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_65_89.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_65_92.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_65_92.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_65_98.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_65_98.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_67_89.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_67_89.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_67_90.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_67_90.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_72_89.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_72_89.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_78_102.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_78_102.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_79_86.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_79_86.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_79_99.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_79_99.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_80_97.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_80_97.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_81_96.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_81_96.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_81_99.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_81_99.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_82_99.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_82_99.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_84_105.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_84_105.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_85_104.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_85_104.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_85_94.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_85_94.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_86_121.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_86_121.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
-pdal translate /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_10_08_2018_256x256_2km/tile_90_109.LAZ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_90_109.LAZ hag ferry --filters.ferry.dimensions="HeightAboveGround=Z"
+tile_105_161
+tile_106_174
+tile_106_175
+tile_114_187
+tile_117_173
+tile_121_141
+tile_121_173
+tile_121_175
+tile_122_140
+tile_125_195
+tile_125_199
+tile_127_146
+tile_127_158
+tile_128_179
+tile_129_136
+tile_130_159
+tile_131_134
+tile_131_149
+tile_132_134
+tile_132_157
+tile_134_154
+tile_135_110
+tile_135_153
+tile_137_137
+tile_137_140
+tile_137_200
+tile_137_201
+tile_138_140
+tile_138_167
+tile_138_202
+tile_139_118
+tile_139_140
+tile_140_141
+tile_141_142
+tile_142_154
+tile_145_144
+tile_149_120
+tile_150_201
+tile_154_114
+tile_155_201
+tile_63_94
+tile_65_89
+tile_65_92
+tile_65_98
+tile_67_89
+tile_67_90
+tile_72_89
+tile_78_102
+tile_79_86
+tile_79_99
+tile_80_97
+tile_81_96
+tile_81_99
+tile_82_99
+tile_84_105
+tile_85_104
+tile_85_94
+tile_86_121
+tile_90_109

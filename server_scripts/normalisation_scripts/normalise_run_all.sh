@@ -1,2 +1,2 @@
-for f in `seq 1 5`; do nohup ssh -i /tmp/id_rsa ubuntu@eecolidar$f.eecolidar-nlesc.surf-hosted.nl "/home/ubuntu/normalisation_scripts/normalise_run_tiles_$f.sh" & done; \
-nohup /home/ubuntu/normalisation_scripts/normalise_run_tiles_0.sh
+for f in `seq 1 5`; do echo "Running normalisation on server $f"; nohup ssh -i /tmp/id_rsa ubuntu@eecolidar$f.eecolidar-nlesc.surf-hosted.nl "/home/ubuntu/normalisation_scripts/normalise_run_tiles_$f.sh" & done; \
+echo "Running normalisation on server 0"; nohup /home/ubuntu/normalisation_scripts/normalise_run_tiles_0.sh;
