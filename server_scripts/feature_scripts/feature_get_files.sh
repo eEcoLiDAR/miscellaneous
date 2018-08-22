@@ -1,1 +1,1 @@
-for f in `seq 0 5`; do echo $f; scp -r ubuntu@eecolidar$f.eecolidar-nlesc.surf-hosted.nl:/data/local/eecolidar/rclone/tmp/ahn3_feature_100m/ ../../; done;
+for f in `seq 0 5`; do echo "Getting files from server $f"; scp -r ubuntu@eecolidar$f.eecolidar-nlesc.surf-hosted.nl:/data/local/eecolidar/rclone/tmp/ahn3_feature_1km/ ../../data/; done;

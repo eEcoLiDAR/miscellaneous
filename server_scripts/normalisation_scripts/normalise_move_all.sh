@@ -1,2 +1,2 @@
-for f in `seq 1 5`; do echo "Moving normalisation on server $f"; nohup ssh -i /tmp/id_rsa ubuntu@eecolidar$f.eecolidar-nlesc.surf-hosted.nl "/bin/cp -rn /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/" & done; \
-echo "Moving normalisation on server 0"; nohup /bin/cp -rn /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/;
+for f in `seq 1 5`; do echo "Moving normalisation files on server $f"; nohup ssh -i /tmp/id_rsa ubuntu@eecolidar$f.eecolidar-nlesc.surf-hosted.nl "/bin/cp -rn /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/;" & done; \
+echo "Moving normalisation files on server 0"; nohup /bin/cp -rn /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/;

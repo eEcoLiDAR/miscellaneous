@@ -1,115 +1,115 @@
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_104_150.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_104_150_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_104_150.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_105_150.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_105_150_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_105_150.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_106_150.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_106_150_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_106_150.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_107_150.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_107_150_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_107_150.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_108_150.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_108_150_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_108_150.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_109_150.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_109_150_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_109_150.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_110_150.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_110_150_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_110_150.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_111_150.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_111_150_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_111_150.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_112_150.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_112_150_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_112_150.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_113_150.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_113_150_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_113_150.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_114_150.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_114_150_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_114_150.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_115_150.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_115_150_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_115_150.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_116_150.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_116_150_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_116_150.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_117_150.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_117_150_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_117_150.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_118_150.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_118_150_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_118_150.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_119_150.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_119_150_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_119_150.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_120_150.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_120_150_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_120_150.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_132_150.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_132_150_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_132_150.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_133_150.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_133_150_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_133_150.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_134_150.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_134_150_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_134_150.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_135_150.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_135_150_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_135_150.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_136_150.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_136_150_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_136_150.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_137_150.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_137_150_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_137_150.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_138_150.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_138_150_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_138_150.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_139_150.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_139_150_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_139_150.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_140_150.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_140_150_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_140_150.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_141_150.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_141_150_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_141_150.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_142_150.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_142_150_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_142_150.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_143_150.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_143_150_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_143_150.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_144_150.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_144_150_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_144_150.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_145_150.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_145_150_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_145_150.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_146_150.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_146_150_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_146_150.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_147_150.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_147_150_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_147_150.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_148_150.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_148_150_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_148_150.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_149_150.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_149_150_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_149_150.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_106.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_106_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_106.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_107.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_107_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_107.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_108.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_108_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_108.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_109.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_109_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_109.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_110.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_110_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_110.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_111.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_111_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_111.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_112.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_112_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_112.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_113.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_113_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_113.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_114.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_114_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_114.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_115.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_115_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_115.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_116.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_116_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_116.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_117.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_117_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_117.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_118.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_118_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_118.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_119.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_119_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_119.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_147.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_147_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_147.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_148.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_148_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_148.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_149.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_149_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_149.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_150.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_150_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_150.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_151.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_151_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_151.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_152.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_152_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_152.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_153.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_153_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_153.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_154.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_154_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_154.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_155.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_155_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_155.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_156.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_156_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_156.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_157.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_157_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_157.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_158.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_158_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_158.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_159.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_159_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_159.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_160.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_160_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_160.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_161.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_161_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_161.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_162.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_162_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_162.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_163.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_163_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_163.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_166.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_166_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_166.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_167.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_167_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_167.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_168.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_168_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_168.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_169.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_169_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_169.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_170.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_170_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_170.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_173.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_173_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_173.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_174.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_174_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_174.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_175.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_175_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_175.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_176.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_176_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_176.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_177.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_177_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_177.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_178.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_178_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_178.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_179.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_179_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_179.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_180.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_180_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_180.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_181.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_181_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_181.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_182.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_182_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_182.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_183.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_183_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_183.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_184.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_184_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_184.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_185.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_185_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_185.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_186.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_186_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_186.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_187.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_187_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_187.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_188.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_188_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_188.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_189.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_189_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_189.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_190.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_190_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_190.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_191.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_191_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_191.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_192.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_192_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_192.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_193.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_193_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_193.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_194.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_194_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_194.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_195.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_195_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_195.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_196.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_196_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_196.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_197.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_197_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_197.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_198.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_198_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_198.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_199.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_199_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_199.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_150_202.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_150_202_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_150_202.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_151_150.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_151_150_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_151_150.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_152_150.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_152_150_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_152_150.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_153_150.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_153_150_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_153_150.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_154_150.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_154_150_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_154_150.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_155_150.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_155_150_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_155_150.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_156_150.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_156_150_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_156_150.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_157_150.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_157_150_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_157_150.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_158_150.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_158_150_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_158_150.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_159_150.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_159_150_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_159_150.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_160_150.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_160_150_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_160_150.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_161_150.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_161_150_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_161_150.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_162_150.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_162_150_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_162_150.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_163_150.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_163_150_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_163_150.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_164_150.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_164_150_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_164_150.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_165_150.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_165_150_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_165_150.ply
-python /home/ubuntu/feature_scripts/computefea_wtargets_cell.py /data/local/eecolidar/modules/python/laserchicken/ /data/local/eecolidar/rclone/tmp/ahn3_256x256_2km_norm/tile_166_150.LAZ /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_10m/tile_166_150_target.laz 5 /data/local/eecolidar/rclone/tmp/ahn3_feature_10m/tile_166_150.ply
+tile_104_150
+tile_105_150
+tile_106_150
+tile_107_150
+tile_108_150
+tile_109_150
+tile_110_150
+tile_111_150
+tile_112_150
+tile_113_150
+tile_114_150
+tile_115_150
+tile_116_150
+tile_117_150
+tile_118_150
+tile_119_150
+tile_120_150
+tile_132_150
+tile_133_150
+tile_134_150
+tile_135_150
+tile_136_150
+tile_137_150
+tile_138_150
+tile_139_150
+tile_140_150
+tile_141_150
+tile_142_150
+tile_143_150
+tile_144_150
+tile_145_150
+tile_146_150
+tile_147_150
+tile_148_150
+tile_149_150
+tile_150_106
+tile_150_107
+tile_150_108
+tile_150_109
+tile_150_110
+tile_150_111
+tile_150_112
+tile_150_113
+tile_150_114
+tile_150_115
+tile_150_116
+tile_150_117
+tile_150_118
+tile_150_119
+tile_150_147
+tile_150_148
+tile_150_149
+tile_150_150
+tile_150_151
+tile_150_152
+tile_150_153
+tile_150_154
+tile_150_155
+tile_150_156
+tile_150_157
+tile_150_158
+tile_150_159
+tile_150_160
+tile_150_161
+tile_150_162
+tile_150_163
+tile_150_166
+tile_150_167
+tile_150_168
+tile_150_169
+tile_150_170
+tile_150_173
+tile_150_174
+tile_150_175
+tile_150_176
+tile_150_177
+tile_150_178
+tile_150_179
+tile_150_180
+tile_150_181
+tile_150_182
+tile_150_183
+tile_150_184
+tile_150_185
+tile_150_186
+tile_150_187
+tile_150_188
+tile_150_189
+tile_150_190
+tile_150_191
+tile_150_192
+tile_150_193
+tile_150_194
+tile_150_195
+tile_150_196
+tile_150_197
+tile_150_198
+tile_150_199
+tile_150_202
+tile_151_150
+tile_152_150
+tile_153_150
+tile_154_150
+tile_155_150
+tile_156_150
+tile_157_150
+tile_158_150
+tile_159_150
+tile_160_150
+tile_161_150
+tile_162_150
+tile_163_150
+tile_164_150
+tile_165_150
+tile_166_150
