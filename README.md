@@ -1,5 +1,7 @@
 # Miscellaneous
 
+This repository contains various scripts and files which are used in the eEcoLiDAR project. Most of these are used only once and, therefore, maintaining them does not have the highest priority.
+
 ## Virtual Machines
 
 The VMs can be managed on https://ui.hpccloud.surfsara.nl/.
@@ -30,7 +32,7 @@ Once all tiles have been processed, the output can be moved from the VMs to the 
 
 ### Feature Scripts
 
-Feature extraction...
+The feature extraction scripts follow a similar logic to the normalisation scripts. In particular, the _feature_copy_files.sh_ script copies the other scripts to the relevant VM. The _feature_run_all.sh_ script can be used from _Server0_ to start the feature extracttion. The _feature_run_tiles_x.sh_ scripts include the command which executes the feature extraction. This uses the _computefea_wtargets_cell.py_ Python script to call the _LaserChicken_ module, which calculates the features. The _feature_tiles_x.sh_ files contain the list of tiles per VM. The _feature_move_all.sh_ script moves the output _.ply_ files to the WebDAV server. There are also redo scripts, similar to the normalisation procedure. The _feature_get_lists.sh_ script downloads the list of tiles which have already been processed. Finally, the _feature_get_files.sh_ downloads the output files to the local environment, such that is can be further processed by the _Data Conversion_ _Jupyter Notebook_.
 
 ## Jupyter Notebooks
 
@@ -38,7 +40,7 @@ Jupyter Notebooks...
 
 ### List Analysis
 
-The _get_lists.sh_ scripts copy the list of processed tiles to the _Data_ directory discussed below. From there, the _ListAnalysis.ipynb_ reads the lists, together with the _tiles_list.txt_ file which contains the list of all tiles. It then compares the actual output with the expected output and shows how many tiles have already been processed and which ones still need to be processed.
+The _get_lists.sh_ scripts copy the list of processed tiles to the _data_ directory discussed below. From there, the _ListAnalysis.ipynb_ reads the lists, together with the _tiles_list.txt_ file which contains the list of all tiles. It then compares the actual output with the expected output and shows how many tiles have already been processed and which ones still need to be processed.
 
 ### Data Conversion
 
@@ -50,11 +52,11 @@ Text.
 
 ## Data
 
-Text.
+The _data_ directory of this repository contains various output files related to the normalisation and feature extraction procedures.
 
 ### Lists
 
-Text.
+This directory contains the _tiles_list.txt_ files which is a list of all tiles. It also contains all lists downloaded by the _get_lists.sh_ scripts of the normalisation and feature extraction.
 
 ### AHN3 Feature Data
 
