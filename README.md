@@ -20,7 +20,7 @@ During the normalisation and feature extraction, _Server0_ will function as a ma
 
 Normalising a pointcloud means the height of the groundlevel is subtracted from the height of each point. Then, the _z_-coordinate of each point refers to the height-above-ground. This can be done using the _pdal_ library. Its [documentation](https://pdal.io/stages/filters.hag.html) includes more information.
 
-The _normalise_copy_files.sh_ script first copies the other scripts onto the relevant VM. The _normalise_run_all.sh_ script can be started from within _Server0_ and starts up the procedure on all VMs. When you execute a Unix job in the background and logout from the session, your process will get killed. Our script avoids this using the _nohup_ method, so it is safe to log out of _Server0_ while the normalisation is running.
+The _normalise_copy_files.sh_ script first copies the other scripts onto the relevant VM. Note that the VMs must already have the relevant directories, otherwise the copy will not succeed. The _normalise_run_all.sh_ script can be started from within _Server0_ and starts up the procedure on all VMs. When you execute a Unix job in the background and logout from the session, your process will get killed. Our script avoids this using the _nohup_ method, so it is safe to log out of _Server0_ while the normalisation is running.
 
 On each VM, the _normalise_run_tiles_x.sh_ script starts up the normalisation job. It includes the _pdal hag_ command to adjust the height-above-ground. As the list of all tiles is large, the _xargs_ method is used. This refers to a list of all tiles and iterates through the list, executing the same job for each of them. The _xargs_ methods allows the user to specify how many jobs each server should do simultaneously. Taking care of the memory of each VM and the size of the input files, the normalisation script only runs 2 jobs simultaneously. This list of tiles is located in the _normalise_tiles_x.sh_ file.
 
@@ -36,19 +36,19 @@ The feature extraction scripts follow a similar logic to the normalisation scrip
 
 ## Jupyter Notebooks
 
-Jupyter Notebooks...
+There are three _Jupyter Notebooks_ which help analyse and convert the data.
 
 ### List Analysis
 
-The _get_lists.sh_ scripts copy the list of processed tiles to the _data_ directory discussed below. From there, the _ListAnalysis.ipynb_ reads the lists, together with the _tiles_list.txt_ file which contains the list of all tiles. It then compares the actual output with the expected output and shows how many tiles have already been processed and which ones still need to be processed.
+The _get_lists.sh_ scripts copy the lists of processed tiles to the _data_ directory discussed below. From there, the _ListAnalysis.ipynb_ reads the lists, together with the _tiles_list.txt_ file which contains the list of all tiles. It then compares the actual output with the expected output and shows how many tiles have already been processed and which ones still need to be processed.
 
 ### Data Conversion
 
-The output of LaserChicken is a list of _.ply_ files, once for each input tile. These files contain a number of points, depending on the chosen resolution, which have the features as attributes. The _DataConversion.ipynb_ reads these _.ply_ files using the _plyfile_ module. It joins the files into one dataset and converts this to a _compressed Numpy array_ and a _GeoTiff_.
+The output of LaserChicken are _.ply_ files, one for each input tile. These files contain a number of points, depending on the chosen resolution, which have the features as attributes. The _DataConversion.ipynb_ reads these _.ply_ files using the _plyfile_ module. It joins the files into one dataset and converts this to a _compressed Numpy array_ and to a _GeoTiff_.
 
 ### Data Verification
 
-To verify that the features are correctly extracted, the _DataVerification.ipynb_ reads the _.npz_ version of the data and prints a summary for each feature. This is, then, compared with the expected range for each feature.
+To verify that the features are correctly extracted, the _DataVerification.ipynb_ reads the _.npz_ version of the data and prints various details for each feature. This is, then, compared with the expected details for each feature.
 
 ## Data
 
@@ -60,8 +60,8 @@ This directory contains the _tiles_list.txt_ files which is a list of all tiles.
 
 ### AHN3 Feature Data
 
-Text.
+The _feature_get_lists.sh_ script downloads all _.pl_ files from the various VMs and places them in the _data_ directory, in a separate directory per resolution.
 
 ### Terrain Data
 
-Text.
+The _DataConversion.ipynb_ _Jupyter Notebook_ places the _compressed Numpy array_ and a _GeoTiff_ with the terrain features in the _data_ directory.
