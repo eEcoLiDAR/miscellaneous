@@ -44,11 +44,11 @@ The _get_lists.sh_ scripts copy the list of processed tiles to the _data_ direct
 
 ### Data Conversion
 
-Text.
+The output of LaserChicken is a list of _.ply_ files, once for each input tile. These files contain a number of points, depending on the chosen resolution, which have the features as attributes. The _DataConversion.ipynb_ reads these _.ply_ files using the _plyfile_ module. It joins the files into one dataset and converts this to a _compressed Numpy array_ and a _GeoTiff_.
 
 ### Data Verification
 
-Text.
+To verify that the features are correctly extracted, the _DataVerification.ipynb_ reads the _.npz_ version of the data and prints a summary for each feature. This is, then, compared with the expected range for each feature.
 
 ## Data
 
