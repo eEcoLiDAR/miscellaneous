@@ -20,7 +20,7 @@ During the normalisation and feature extraction, _Server0_ will function as a ma
 
 Normalising a pointcloud means the height of the groundlevel is subtracted from the height of each point. Then, the _z_-coordinate of each point refers to the height-above-ground. This can be done using the _pdal_ library. Its [documentation](https://pdal.io/stages/filters.hag.html) includes more information.
 
-The _normalise_copy_files.sh_ script first copies the other scripts onto the relevant VM. Note that the VMs must already have the relevant directories, otherwise the copy will not succeed. The _normalise_run_all.sh_ script can be started from within _Server0_ and starts up the procedure on all VMs. When you execute a Unix job in the background and logout from the session, your process will get killed. Our script avoids this using the _nohup_ method, so it is safe to log out of _Server0_ while the normalisation is running.
+The _normalise_copy_files.sh_ script first copies the other scripts onto the relevant VM. Note that the VMs must already have the relevant directories, otherwise the copy will not succeed. The _normalise_run_all.sh_ script can be executed from within _Server0_ and starts up the normalisation procedure on all VMs. When you execute a Unix job in the background and logout from the session, your process will get killed. Our script avoids this using the _nohup_ method, so it is safe to log out of _Server0_ while the normalisation is running.
 
 On each VM, the _normalise_run_tiles_x.sh_ script starts up the normalisation job. It includes the _pdal hag_ command to adjust the height-above-ground. As the list of all tiles is large, the _xargs_ method is used. This refers to a list of all tiles and iterates through the list, executing the same job for each of them. The _xargs_ methods allows the user to specify how many jobs each server should do simultaneously. Taking care of the memory of each VM and the size of the input files, the normalisation script only runs 2 jobs simultaneously. This list of tiles is located in the _normalise_tiles_x.sh_ file.
 
@@ -32,7 +32,7 @@ Once all tiles have been processed, the output can be moved from the VMs to the 
 
 ### Feature Scripts
 
-The feature extraction scripts follow a similar logic to the normalisation scripts. In particular, the _feature_copy_files.sh_ script copies the other scripts to the relevant VM. The _feature_run_all.sh_ script can be used from _Server0_ to start the feature extracttion. The _feature_run_tiles_x.sh_ scripts include the command which executes the feature extraction. This uses the _computefea_wtargets_cell.py_ Python script to call the _LaserChicken_ module, which calculates the features. The _feature_tiles_x.sh_ files contain the list of tiles per VM. The _feature_move_all.sh_ script moves the output _.ply_ files to the WebDAV server. There are also redo scripts, similar to the normalisation procedure. The _feature_get_lists.sh_ script downloads the list of tiles which have already been processed. Finally, the _feature_get_files.sh_ downloads the output files to the local environment, such that is can be further processed by the _Data Conversion_ _Jupyter Notebook_.
+The feature extraction scripts follow a similar logic to the normalisation scripts. In particular, the _feature_copy_files.sh_ script copies the other scripts to the relevant VM. The _feature_run_all.sh_ script can be used from _Server0_ to start the feature extraction. The _feature_run_tiles_x.sh_ scripts include the command which executes the feature extraction. This uses the _computefea_wtargets_cell.py_ Python script to call the _LaserChicken_ module, which calculates the features. The _feature_tiles_x.sh_ files contain the list of tiles per VM. The _feature_move_all.sh_ script moves the output _.ply_ files to the WebDAV server. There are also redo scripts, similar to the normalisation procedure. The _feature_get_lists.sh_ script downloads the list of tiles which have already been processed. Finally, the _feature_get_files.sh_ downloads the output files to the local environment, such that they can be further processed by the _Data Conversion_ _Jupyter Notebook_.
 
 ## Jupyter Notebooks
 
@@ -60,8 +60,8 @@ This directory contains the _tiles_list.txt_ files which is a list of all tiles.
 
 ### AHN3 Feature Data
 
-The _feature_get_lists.sh_ script downloads all _.pl_ files from the various VMs and places them in the _data_ directory, in a separate directory per resolution.
+The _feature_get_lists.sh_ script downloads all _.ply_ files from the various VMs and places them in the _data_ directory, in a separate directory per resolution.
 
 ### Terrain Data
 
-The _DataConversion.ipynb_ _Jupyter Notebook_ places the _compressed Numpy array_ and a _GeoTiff_ with the terrain features in the _data_ directory.
+The _Data Conversion_ _Jupyter Notebook_ places the _compressed Numpy array_ and the _GeoTiff_ with the terrain features in the _data_ directory.
