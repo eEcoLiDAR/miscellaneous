@@ -1,12 +1,12 @@
 # Utils
 
 ## Mounting web-dav server
-Since we are using large LiDAR data sets we can't copy all the data to our laptops and computers. The most efficient way to access the data is to mount our `web-dav storage` as local file system. The detailed steps on how to do it in Windows and Linux are in the coming sub-sections.
+Since we are using large LiDAR data sets we can't copy all the data to our laptops and computers. The most efficient way to access the data is to mount our `web-dav storage` as local file system. We list here the steps on how to do it in Windows and Linux.
 
 ### Windows
-To mount eEcolidar web-dav storage in Windows we can use [winfsp](https://github.com/billziss-gh/winfsp). To mount the eEcolidar just follow the [winfsp instructions](https://github.com/billziss-gh/winfsp#winfsp---windows-file-system-proxy). As folder in the `winfsp interface` just add `https://webdav.grid.surfsara.nl/pnfs/grid.sara.nl/data/projects.nl/eecolidar/`. For login you just need to add your credentials.
+To mount eEcolidar web-dav storage in Windows we can use [winfsp](https://github.com/billziss-gh/winfsp), watch [winfsp instructions](https://github.com/billziss-gh/winfsp#winfsp---windows-file-system-proxy) to understand how to do it. The url `https://webdav.grid.surfsara.nl/pnfs/grid.sara.nl/data/projects.nl/eecolidar/` is what needs to be added as `folder` in the `winfsp interface` and for login use your `web-dav` account.
 
-If you prefer a command line approach the you should do the following:
+If you prefer a command line approach, you can mount it as a network storage.
 ```
 #To mount it as drive w:
 net use w: https://webdav.grid.surfsara.nl/pnfs/grid.sara.nl/data/projects.nl/eecolidar/
@@ -17,11 +17,12 @@ net use w: /delete
 
 ### Linux
 
-In Linux we use [rclone](https://rclone.org/install/) which is a command line tool which uses `fuse` to mount different type of storages. For eEcolidar we use the `webdav` storage type. After installing `rclone` you need to configure it calling the command `rclone config`.
+In Linux we use [rclone](https://rclone.org/install/). It is a command line tool which uses `fuse` to mount different type of storages including `web-dav`. After installing `rclone` you need to configure it.
 ```
 eecolidar:~$ rclone config
 ```
-The following menu will appear and you should enter `n`.
+
+The following menu will appear and you should start the configuration of a new connection, i.e., `n) New remote`.
 ```
 2018/09/07 11:21:45 NOTICE: Config file "/home/eecolidar/.config/rclone/rclone.conf" not found - using defaults
 No remotes found - make a new one
@@ -30,7 +31,7 @@ s) Set configuration password
 q) Quit config
 n/s/q>
 ```
-Then you should enter the name for the connection to a remote storage. For this example we use `eecolidar_webdav`, but you can pick a name at your convenience.
+For this example we use `eecolidar_webdav` as the name for the connection to a remote storage, but you can pick a name at your convenience.
 ```
 n/s/q> n
 name> eecolidar_webdav
@@ -85,8 +86,7 @@ User name
 Enter a string value. Press Enter for the default ("").
 user> eecolidar
 ```
-For automatic login the password it is possible to add it to the login information. NOTE: it will be encrypted and not saved as plain text in the configuration file.
-It also gives the possibility to request a `token` instead of a `user name` and `password` at login time.
+For automatic login the password can be added to the login information. NOTE: The password will be encrypted and not saved as plain text in the configuration file. It is also the possible to request a `token` and use it instead of `user name` and `password` at login time.
 ```
 user> eecolidar
 Password.
@@ -104,7 +104,7 @@ bearer_token>
 Remote config
 ```
 
-After inserting the login information, rclone will ask to confirm the information added.
+After inserting the login information, rclone will ask you to confirm the information added.
 ```
 --------------------
 [eecolidar_webdav]
@@ -120,7 +120,7 @@ d) Delete this remote
 y/e/d> y
 ```
 
-If all the information is correct you can quit `rclone config`, option `q`.
+If all the information is correct you can quit `rclone config` with option `q`.
 ```
 Name                 Type
 ====                 ====
@@ -137,13 +137,13 @@ e/n/d/r/c/s/q> q
 eecolidar:~$
 ```
 
-As the menu above shows, it is possible to re-configure the setup. Once it is configured the next step is to mount it. For this example we use the location `/data/local/eecolidar_webdav`. The location `/data/local/eecolidar/rclone/tmp/` is used by rclone to cache the files it downloads from our `webdav storage`.
+As the menu above shows it is possible to re-configure the setup, you just need to call again `rclone config`. Once it is configured the next step is to mount it. For this example we use the location `/data/local/eecolidar_webdav`. As rclone cache  we use `/data/local/eecolidar/rclone/tmp/`. It is the location used by rclone to cache the files used by the applications. The option `--vfs-cache-mode full` tells rclone to first download the file before it is used.
 ```
 rclone mount eecolidar_webdav: /data/local/eecolidar_webdav/ --allow-other --vfs-cache-mode full --daemon --log-file=/data/local/eecolidar/rclone/rclone_log.out --log-level DEBUG --cache-dir /data/local/eecolidar/rclone/tmp/ --cache-db-purge --vfs-cache-max-age 20m0s --dir-cache-time 15m0s --cache-workers=6
 ```
-When the operations over the files is short and many happen in parallel, we recommend small time values for `--vfs-cache-max-age` and `--dir-cache-time`, i.e., between two and five minutes. Otherwise, use the ones in the example.
+When the files are used for a short period of time and many are request in simultaneously, we recommend small time values for `--vfs-cache-max-age` and `--dir-cache-time` (between two and five minutes) to avoid cache overflow, rclone hangs in such situations. If your storage has 128GB free space or more, just use the values given in the example.
 
-To unmount you only need to make none of the files or directories under `/data/local/eecolidar_webdav/` are being used.
+To unmount you only need to make sure none of the files or directories under `/data/local/eecolidar_webdav/` are being used.
 ```
 fusermount -u  /data/local/eecolidar_webdav/
 ```
