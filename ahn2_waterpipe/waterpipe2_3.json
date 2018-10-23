@@ -1,0 +1,51 @@
+{
+    "pipeline":[
+	{
+	    "tag":"ofnc",
+	    "filename":"class1.las"
+	},
+	{
+	    "tag":"pot_veg",
+	    "type":"filters.range",
+	    "limits":"Z(0.06:]",
+	    "inputs":["ofnc"]
+	},
+	{
+	    "tag":"pot_wc",
+	    "type":"filters.range",
+	    "limits":"Z[0.:0.06]",
+	    "inputs":["ofnc"]
+	},
+	{
+	    "type":"filters.neighborclassifier",
+	    "candidate":"tile_subtile_voters.las",
+	    "k":"9",
+	    "tag":"voting",
+	    "inputs":"pot_wc"
+	},
+	{
+	    "type":"filters.assign",
+	    "assignment":"Classification[2:2]=1",
+	    "tag":"reassign_veg_water"
+	},
+	{
+	    "tag":"read_voters",
+	    "type":"readers.las",
+	    "filename":"tile_subtile_voters.las"
+	},
+	{
+	    "type":"filters.merge",
+	    "tag":"combined_reclass",
+	    "inputs":["read_voters","reassign_veg_water","pot_veg"]
+	},
+	{
+	    "type":"writers.las",
+	    "filename":"tile_subtile_norm_prov_water.laz",
+	    "tag":"output"
+	}
+    ]
+}
+
+	    
+	
+

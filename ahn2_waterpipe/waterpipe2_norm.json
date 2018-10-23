@@ -1,0 +1,21 @@
+{
+    "pipeline":[
+	{
+	    "tag":"ofnc",
+	    "filename":"ofnc.las"
+	},
+	{
+	    "tag":"gfnc",
+	    "filename":"gfnc.las"
+	},
+	{
+	    "type":"filters.merge",
+	    "inputs":["ofnc","gfnc"]
+	},
+	{
+	    "tag":"out",
+	    "filename":"mergedoutput.laz",
+	    "forward":"all"
+	}
+    ]
+}

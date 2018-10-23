@@ -1,0 +1,35 @@
+{
+    "pipeline":[
+	{
+	    "filename":"class1.las",
+	    "tag":"ofnc"
+	},
+	{
+	    "filename":"class2.las",
+	    "tag":"gfnc"
+	},
+	{
+	    "type":"filters.range",
+	    "limits":"Z[:0.)",
+	    "inputs":"ofnc",
+	    "tag":"wc"
+	},
+	{
+	    "type":"filters.assign",
+	    "assignment":"Classification[:]=9"
+	},
+	{
+	    "type":"filters.merge",
+	    "tag":"voters",
+	    "inputs":["gfnc","wc"]
+	},
+	{
+	    "type":"writers.las",
+	    "filename":"voters.las",
+	    "forward":"all"
+	}
+    ]
+}
+
+		      
+	    
