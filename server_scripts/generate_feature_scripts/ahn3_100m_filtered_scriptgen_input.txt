@@ -1,0 +1,53 @@
+# This file provides the required input parameters
+# to create the feature scripts required to run
+# laserchicken for feature extraction from ahn3
+# on the VMs hosted at SURFsara
+#
+# configuration:
+# 100m cells
+# filtered to use only 'unclassified' points as a
+# proxy for vegetation filtering is expicitly
+# implemented in python script which calls laerchicken
+#
+#
+#parameters:
+
+
+#address path for VMs
+location_of_VMs :: ubuntu@eecolidar$f.eecolidar-nlesc.surf-hosted.nl
+
+#address path master VM
+loc_master_VM :: ubuntu@eecolidar0.eecolidar-nlesc.surf-hosted.nl
+
+#number of available virtual machines
+number_of_VMs :: 6
+
+#number of processes per VM
+number_of_processes :: 3
+
+#full path to feature scripts (on VM)
+feature_script_path_VM :: /home/ubuntu/feature_scripts
+
+#webdav path
+webdav_path :: /data/local/eecolidar_webdav/01_Work/ALS/Netherlands
+
+#path to local clone of data store'
+local_clone_data_path :: /data/local/eecolidar/rclone/tmp
+
+#path to input data from level of cloned data path
+input_data_dir :: ahn3_256x256_2km_norm
+
+#path to output data from level of cloned data path
+output_data_dir :: ahn3_feature_filtered_100m
+
+#name of python script invoking laserchicken
+script_laserchicken :: computefea_wtargets_filtered_cell.py
+
+#spatial dimension of cell in meters
+spatial_resolution_cell :: 100
+
+#path to laserchicken
+laserchicken_path :: /data/local/eecolidar/modules/python/laserchicken
+
+#path to target files
+targets_path :: /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_100m
