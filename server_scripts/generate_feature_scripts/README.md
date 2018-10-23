@@ -8,6 +8,7 @@ is the calculation of features in cells (of a specified size) using laserchicken
 
 ## Requirements
 Python 3+
+
 numpy
 
 ## Input
@@ -22,7 +23,7 @@ reproducible fashion
 
 ## Running
 The `generate_feature_script_cell.py` should be run in the directory which contains its `input file`. This can be done as
-`pyhton generate_feature_script_cell.py inputfile.txt`.
+`python generate_feature_script_cell.py inputfile.txt`.
 
 An intial example of an input file is provided as `ahn3_100m_filtered_scriptgen_input.txt`.
 
