@@ -23,7 +23,7 @@ loc_master_VM :: ubuntu@eecolidar0.eecolidar-nlesc.surf-hosted.nl
 number_of_VMs :: 6
 
 #number of processes per VM
-number_of_processes :: 3
+number_of_processes :: 2
 
 #full path to feature scripts (on VM)
 feature_script_path_VM :: /home/ubuntu/feature_scripts
