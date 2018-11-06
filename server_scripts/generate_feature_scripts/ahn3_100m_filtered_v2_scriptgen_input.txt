@@ -3,12 +3,15 @@
 # laserchicken for feature extraction from ahn3
 # on the VMs hosted at SURFsara
 #
-# configuration:
-# 100m cells
-# filtered to use only 'unclassified' points as a
-# proxy for vegetation filtering is expicitly
-# implemented in python script which calls laerchicken
+# This files makes use of the modified laserchicken (laserchicken_mod_kd)
+# to circumvent the kd-tree issue
 #
+# configuration:
+# - 100m cells
+# - filtered to use only 'unclassified' points as a
+#   proxy for vegetation filtering is expicitly
+#   implemented in python script which calls laserchicken
+# - use /home/ubuntu/laserchicken_mod_kd
 #
 #parameters:
 
@@ -38,7 +41,7 @@ local_clone_data_path :: /data/local/eecolidar/rclone/tmp
 input_data_dir :: ahn3_256x256_2km_norm
 
 #path to output data from level of cloned data path
-output_data_dir :: ahn3_feature_filtered_100m
+output_data_dir :: ahn3_feature_filtered_v2_100m
 
 #name of python script invoking laserchicken
 script_laserchicken :: computefea_wtargets_filtered_cell.py
@@ -47,7 +50,7 @@ script_laserchicken :: computefea_wtargets_filtered_cell.py
 spatial_resolution_cell :: 100
 
 #path to laserchicken
-laserchicken_path :: /data/local/eecolidar/modules/python/laserchicken
+laserchicken_path :: /home/ubuntu/laserchicken_mod_kd
 
 #path to target files
 targets_path :: /data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_targets_100m
