@@ -13,18 +13,19 @@ Massive PotreeConverter was designed to process massive point cloud data sets. D
 
 `Mpc-tiling` has two key parameters, number of gird cells and its extent. A drawback of the system is that the number of grid cells must be multiple of 2, an optimization for easy navigation over directories name composing the final result.
 
-For the Netherlands the LiDAR data uses [Amersfoort / RD new](https://epsg.io/28992) projection, i.e., the `EPSG projection 28992`. The center coordinates of `EPSG projection 28992` is `142892.19 470783.87`. To obtain a grid with square cells of 2km length centered with [Amersfoort / RD new](https://epsg.io/28992) we need to create a grid of size `256x256` since a grid of `128x128` (grid size has to be multiple of 2) will not be enough to cover all the Netherlands. Hence, the extent of the grid will be `-113107.8100 214783.8700 398892.1900 726783.87` and it was calculated as follow:
+For the Netherlands the LiDAR data uses [Amersfoort / RD new](https://epsg.io/28992) projection, i.e., the `EPSG projection 28992`. The center coordinates of `EPSG projection 28992` is `142892.19 470783.87`. To obtain a grid with square cells of 2km length centered with [Amersfoort / RD new](https://epsg.io/28992) we need to create a grid of size `256x256` since a grid of `128x128` (grid size has to be multiple of 2) will not be enough to cover all the Netherlands. Hence, the extent of the grid will be `-113107.8100 214783.8700 398892.1900 726783.87` and it was calculated as follows:
 ```
 X = 142892.19
 Y = 470783.87
 
-x_min = X - 128000 = -113107.8100
-x_max = X + 128000 = 398892.1900
-y_min = Y - 128000 = 214783.8700
-y_max = Y + 128000 = 726783.87
+x_min = X - 128*(2*1000) = -113107.8100
+x_max = X + 128*(2*1000) = 398892.1900
+y_min = Y - 128*(2*1000) = 214783.8700
+y_max = Y + 128*(2*1000) = 726783.87
 
 Extent = (x_min y_min x_max y_max) 
 ```
+where the factor `2*1000` represents the cell size of 2 km and the 1 m resolution of the coordinate system.
 
 Once we know the grid extent it is easy to re-grid any Dutch LiDAR data set. In the following example we are tiling the LiDAR data set [AHN3](https://www.pdok.nl/nl/ahn3-downloads) downloaded on `2018-08-10` using 2 parallel processes.
 ```
