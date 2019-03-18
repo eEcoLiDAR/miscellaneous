@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#specify path root to data
+in_path_root='/data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_2019_01_08'
+
+#specify path root for output data
+out_path_root='/data/local/eecolidar_webdav/01_Work/ALS/Netherlands/ahn3_256x256_2019_01_08'

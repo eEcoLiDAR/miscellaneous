@@ -1,0 +1,5 @@
+#!/bin/bash
+
+local_key_path='~/.ssh'
+key_file='id_rsa'
+

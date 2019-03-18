@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#expected arguments
+#$1 : subset number
+
+#read in data/output and tiling global parameters
+. /home/ubuntu/tiling/data_io.conf
+. /home/ubuntu/tiling/tiling.conf
+
+stpath="$out_path_root

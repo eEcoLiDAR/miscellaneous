@@ -1,0 +1,26 @@
+#!/bin/bash
+
+
+#---------------------------------------------------
+#this script creates and sets up infrastructure as
+#required for a tiling run
+#
+#
+#---------------------------------------------------
+
+#set up output directory
+./setup_output_directory.sh
+
+
+#copy ssh key top master
+./copy_key_to_master.sh
+
+#create configuration file with full path to key on cluster
+./create_cluster_key_path.sh
+chmod 755 cluster_key_path.conf
+
+#create tiling directory and copy relevant infrastructure to servers
+./copy_tiling_infra.sh
+
+
+

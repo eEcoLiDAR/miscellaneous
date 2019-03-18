@@ -1,0 +1,19 @@
+#!/bin/bash
+
+#expected arguments
+# $1 data directory
+# $2 number of subsets
+# $3 subset_file_handle
+
+
+#---------
+
+echo 'creating $2 subsets from files in directory $1'
+
+echo 'creating subset lists'
+./create_subset_lists.sh $1 $2 $3
+
+echo 'creating and populating subset folders'
+./create_subset_and_populate_subset_folders.sh $1 $2 $3
+
+

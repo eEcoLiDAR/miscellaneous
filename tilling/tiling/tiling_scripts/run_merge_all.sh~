@@ -1,0 +1,27 @@
+#!/bin/bash
+
+. /home/ubuntu/tiling/data_io.conf
+. /home/ubuntu/tiling/tiling.conf
+. /home/ubuntu/tiling/cluster_info.conf
+source cluster_key_path.conf
+
+retiledSetListHandle="$out_path_root"/"$retiled_handle"
+
+vm_max=$(($number_vms -1))
+
+for i in $(seq 0 $vm_max)
+do
+
+    retiledSetList="$retiledSetListHandle""$i"
+
+    if [ $i -ne $master_server_number ]
+    then
+	echo "running merging on server $s"
+	nohup ssh -i $full_key_path $user@$server_name_root$s.$server_extension "$tiling_path/run_merge.sh $retiledSetList &"
+
+    else
+	echo "running merging on master server $master_server_number"
+	nohup $tiling_path/run_merge.sh $retiledSetList &
+    fi
+    
+done

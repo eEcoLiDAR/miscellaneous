@@ -1,0 +1,22 @@
+#specify number of VMS
+number_vms=6
+
+#specify user name
+user='ubuntu'
+
+#specify server name root
+server_name_root='eecolidar'
+
+#specify server extension
+server_extension='eecolidar-nlesc.surf-hosted.nl'
+
+#specify number of server to be used as master
+master_server_number=0
+
+#specify path to ssh key. This is where the key is stored on the 'master' server eecolidar0
+key_path='/tmp/'
+
+
+#specify path to location of tiling scripts
+tiling_path="/home/$user/tiling/"
+

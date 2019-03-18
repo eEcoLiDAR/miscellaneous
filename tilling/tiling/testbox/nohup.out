@@ -1,0 +1,5 @@
+running tt.sh on server 0
+running tt.sh on server 1
+running tt.sh on man set 2
+packet_write_wait: Connection to 145.100.59.59 port 22: Broken pipe
+packet_write_wait: Connection to 145.100.59.59 port 22: Broken pipe
