@@ -16,8 +16,8 @@ vm_max=$(($number_vms -1))
 
 for i in $(seq 0 $vm_max)
 do
-    #    ./move_tiles.py "$out_path_root" "$subset_handle" "$i" "$aggregate_handle"
-    echo "place holder move"
+    ./move_tiles.py "$out_path_root" "$subset_handle" "$i" "$aggregate_handle"
+    #echo "place holder move"
 done
 
 

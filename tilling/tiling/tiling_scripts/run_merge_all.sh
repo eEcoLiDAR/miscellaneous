@@ -17,11 +17,14 @@ do
     if [ $i -ne $master_server_number ]
     then
 	echo "running merging on server $i"
-	nohup ssh -i $full_key_path $user@$server_name_root$i.$server_extension "$tiling_path/run_merge.sh $retiledSetList &"
+	#nohup ssh -i $full_key_path $user@$server_name_root$i.$server_extension "$tiling_path/run_merge.sh $retiledSetList &"
+        ssh -i $full_key_path $user@$server_name_root$i.$server_extension "/bin/bash -c \"((nohup $tiling_path/run_merge.sh $retiledSetList > merge.out 2>1) &)\""
 
     else
 	echo "running merging on master server $master_server_number"
-	nohup $tiling_path/run_merge.sh $retiledSetList &
+	#nohup $tiling_path/run_merge.sh $retiledSetList &
+        /bin/bash -c "((nohup $tiling_path/run_merge.sh $retiledSetList > merge.out 2>1) &)"
+
     fi
     
 done

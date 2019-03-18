@@ -12,11 +12,13 @@ do
     if [ $s -ne $master_server_number ]
     then
 	echo "running tiling on server $s"
-	nohup ssh -i $full_key_path $user@$server_name_root$s.$server_extension "$tiling_path/run_tiling.sh $s &" 
+	#nohup ssh -i $full_key_path $user@$server_name_root$s.$server_extension "$tiling_path/run_tiling.sh $s &" 
+        ssh -i $full_key_path $user@$server_name_root$s.$server_extension "/bin/bash -c \"((nohup $tiling_path/run_tiling.sh $s > tiling.out 2>1) &)\"" 
 
     else
 	echo "running tiling on master server $master_server_number"
-	nohup $tiling_path/run_tiling.sh $s &
+	#nohup $tiling_path/run_tiling.sh $s &
+        /bin/bash -c "((nohup $tiling_path/run_tiling.sh $s > tiling.out 2>1) &)"
     fi
 done
 
