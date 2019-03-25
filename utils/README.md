@@ -53,7 +53,8 @@ For `type of storage` you should pick `Webdav`, i.e., the number `23`.
    \ "http"
 Storage> 23
 ```
-For storage `url` you should enter `https://webdav.grid.surfsara.nl/pnfs/grid.sara.nl/data/projects.nl/eecolidar/`;
+For storage `url` you should enter `https://webdav.grid.surfsara.nl:2880/pnfs/grid.sara.nl/data/projects.nl/eecolidar/`;
+<!--For storage `url` you should enter `https://webdav.grid.surfsara.nl/pnfs/grid.sara.nl/data/projects.nl/eecolidar/`;-->
 ```
 Storage> 23
 URL of http host to connect to
@@ -61,11 +62,11 @@ Enter a string value. Press Enter for the default ("").
 Choose a number from below, or type in your own value
  1 / Connect to example.com
    \ "https://example.com"
-url> https://webdav.grid.surfsara.nl/pnfs/grid.sara.nl/data/projects.nl/eecolidar/
+url> https://webdav.grid.surfsara.nl:2880/pnfs/grid.sara.nl/data/projects.nl/eecolidar/
 ```
 For the vendor you should choose `4 / Other site/service or software`.
 ```
-url> https://webdav.grid.surfsara.nl/pnfs/grid.sara.nl/data/projects.nl/eecolidar/
+url> https://webdav.grid.surfsara.nl:2880/pnfs/grid.sara.nl/data/projects.nl/eecolidar/
 Name of the Webdav site/service/software you are using
 Enter a string value. Press Enter for the default ("").
 Choose a number from below, or type in your own value
@@ -105,11 +106,12 @@ Remote config
 ```
 
 After inserting the login information, rclone will ask you to confirm the information added.
+<!-- prior to dcache maintenance the url was url = https://webdav.grid.surfsara.nl/pnfs/grid.sara.nl/data/projects.nl/eecolidar/ -->
 ```
 --------------------
 [eecolidar_webdav]
 type = webdav
-url = https://webdav.grid.surfsara.nl/pnfs/grid.sara.nl/data/projects.nl/eecolidar/
+url = https://webdav.grid.surfsara.nl:2880/pnfs/grid.sara.nl/data/projects.nl/eecolidar/
 vendor = other
 user = eecolidar
 pass = *** ENCRYPTED ***
