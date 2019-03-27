@@ -11,7 +11,7 @@
 source $1
 
 
-if [ $doFilter=true ]; then
+if [ "$doFilter" = True ]; then
 
     xargs --arg-file=$2 \
 	  --replace \
@@ -26,8 +26,7 @@ else
           --max-procs=$numberOfProcesses \
           --verbose \
           --replace \
-	  /bin/bash -c "echo {}"
-          #/bin/bash -c "[ -f $outputDirectory/{}.ply ] && echo \"File {}.ply already exists\" || echo \"Creating file {}.ply\"; python3 $featureScript -p $pathOfLaserchicken -i $inputDirectory/{}_norm.LAZ -t $targetDirectory/{}_target.laz -r $radius -o $outputDirectory/{}.ply ; " 
+	  /bin/bash -c "[ -f $outputDirectory/{}.ply ] && echo \"File {}.ply already exists\" || echo \"Creating file {}.ply\"; python3 $featureScript -p $pathOfLaserchicken -i $inputDirectory/{}_norm.LAZ -t $targetDirectory/{}_target.laz -r $radius -o $outputDirectory/{}.ply ; " 
 
 fi
 
