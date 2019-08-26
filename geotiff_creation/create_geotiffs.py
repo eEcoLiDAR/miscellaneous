@@ -69,7 +69,7 @@ def getInputFiles_list(ListFile,SourceDirectory):
 
 
 def getInputFiles(args):
-    
+
     if args.listFlag == False:
         InputTiles = getInputFiles_directory(args.dataDirectory)
 
@@ -80,7 +80,7 @@ def getInputFiles(args):
 
 
 
-  
+
 
 def getFileTemplate(args,fn):
 
@@ -167,7 +167,7 @@ def plyIntoNumpyArray(directory, tileList, gridLength, columnList):
     terrainData = numpy.empty((gridLength * len(tileList), len(columnList)))
     for i, file in enumerate(tileList):
         if i % 25 == 0 :
-            print('processing tile '+str(i+1)+' of '+str(len(tileList))) 
+            print('processing tile '+str(i+1)+' of '+str(len(tileList)))
 
         plydata = plyfile.PlyData.read(directory + "/" + file)
         for j, column in enumerate(columnList):
@@ -177,24 +177,26 @@ def plyIntoNumpyArray(directory, tileList, gridLength, columnList):
 
 
 """
-This shifts the coordinates by half a cell to account for shift between target list and cell coordinate assumption made by gdal
+This shifts the coordinates by half a cell to account for shift between target list and cell coordinate assumption made by gdal, accomodating geotiff orientation convention
 """
 def shiftTerrain(terrainData,xres,yres):
     tdc = terrainData.copy()
     tdx = tdc[:,0]
     tdy = tdc[:,1]
     tdx = tdx -0.5*xres
-    tdy = tdy -0.5*yres
+    tdy = tdy -0.5*yres*(-1.)
     tdc[:,0] = tdx
     tdc[:,1] = tdy
     return tdc
 
-
+"""
+adpated to accomodate the orientation expected by geotiffs
+"""
 def getGeoTransform(terrainData, xres, yres):
     xmin, ymin, xmax, ymax = [terrainData[:, 0].min(), terrainData[:, 1].min(), terrainData[:, 0].max(), terrainData[:, 1].max()]
     ncols = round(((xmax - xmin) / xres) +1)
     nrows = round(((ymax - ymin) / yres) +1)
-    geotransform = (xmin, xres, 0, ymin, 0, yres)
+    geotransform = (xmin, xres, 0, ymax, 0, -1.*yres)
     arrayinfo = (xmin,xmax,xres,ncols,ymin,ymax,yres,nrows)
     return geotransform, arrayinfo
 
@@ -205,7 +207,7 @@ def combineTerrainFeatures(terrainData, terrainHeader, arrayinfo ):
     listX = numpy.float32(range(int(arrayinfo[3]))*arrayinfo[2] + arrayinfo[0])
     dictX = dict(zip(listX, range(len(listX))))
     #listY = numpy.unique(terrainData[:, 1])
-    listY = numpy.float32(range(int(arrayinfo[7]))*arrayinfo[6] + arrayinfo[4])
+    listY = numpy.float32(range(int(arrayinfo[7]))*arrayinfo[6]*(-1.) + arrayinfo[5])
     dictY = dict(zip(listY, range(len(listY))))
     arrays = numpy.full((bands, len(listY), len(listX)), numpy.nan)
     for terrainDatum in terrainData:
@@ -273,7 +275,7 @@ def create_subregion_geotiffs(args, subTileLists, terrainHeader, xresolution, yr
         infiles = subTileLists[subTiffNumber]
         print('processing subTiff '+str(subTiffNumber))
         print('      total number of constituent tiles : '+str(len(infiles)))
-        
+
 
         if infiles != []:
             outfile= args.outputdir+'/'+args.outputhandle+'_'+str(subTiffNumber)
@@ -293,8 +295,8 @@ def argument_parser():
     parser.add_argument('-ysub','--ySubdivisions',default=1,help='number of y subdivisions')
     parser.add_argument('-o','--outputdir',default='.',help='path to output directory')
     parser.add_argument('-oh','--outputhandle', default=None,help='file handle for output')
-    
-    return parser  
+
+    return parser
 
 def main():
 
@@ -305,8 +307,8 @@ def main():
 
     #Get template of datafiles
     terrainHeader, lengthDataRecord, xResolution, yResolution = getFileTemplate(args,InputTiles[0])
- 
-    subTileLists = dataSplit(InputTiles,numpy.int(args.xSubdivisions),numpy.int(args.ySubdivisions))       
+
+    subTileLists = dataSplit(InputTiles,numpy.int(args.xSubdivisions),numpy.int(args.ySubdivisions))
 
     create_subregion_geotiffs(args, subTileLists, terrainHeader, xResolution, yResolution,lengthDataRecord)
 
@@ -314,5 +316,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-

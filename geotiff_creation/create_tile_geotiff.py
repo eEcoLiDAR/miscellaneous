@@ -38,7 +38,7 @@ def combineTerrainFeatures(terrainData,columnNames,arrayInfo):
     nBands = len(columnNames) -3 # remove x,y,z columnNames
     listX = numpy.float32(range(int(arrayInfo['nCols']))*arrayInfo['xResolution'] + arrayInfo['xMin'])
     dictX = dict(zip(listX, range(len(listX))))
-    listY = numpy.float32(range(int(arrayInfo['nRows']))*arrayInfo['yResolution'] + arrayInfo['yMin'])
+    listY = numpy.float32(range(int(arrayInfo['nRows']))*arrayInfo['yResolution']*(-1.) + arrayInfo['yMax'])
     dictY = dict(zip(listY, range(len(listY))))
     arrays = numpy.full((nBands,len(listY),len(listX)),numpy.nan)
     for terrainDatum in terrainData:
@@ -82,16 +82,20 @@ def getFileDims(data,chosenElement=0,excludedProperties=['raw_classification','g
 
 
 
+
+
 """
-get geotransform object and info on feature array structure
+get geotransform object and info on feature array structure. This has specifed the top left corner.
 """
 def getGeoTransform(terrainData, xres, yres):
     xmin, ymin, xmax, ymax = [terrainData[:, 0].min(), terrainData[:, 1].min(), terrainData[:, 0].max(), terrainData[:, 1].max()]
     ncols = round(((xmax - xmin) / xres) +1)
     nrows = round(((ymax - ymin) / yres) +1)
-    geoTransform = (xmin, xres, 0, ymin, 0, yres)
+    geoTransform = (xmin, xres, 0, ymax, 0, -1.*yres)
     arrayInfo = dict(xMin=xmin,xMax=xmax,xResolution=xres,nCols=ncols,yMin=ymin,yMax=ymax,yResolution=yres,nRows=nrows)
     return geoTransform, arrayInfo
+
+
 
 
 """
@@ -197,7 +201,7 @@ def shiftTerrainData(terrainData,xResolution,yResolution):
     tdx = tdc[:,0]
     tdy = tdc[:,1]
     tdx = tdx -0.5*xResolution
-    tdy = tdy -0.5*yResolution
+    tdy = tdy -0.5*yResolution*(-1.)
     tdc[:,0] = tdx
     tdc[:,1] = tdy
     return tdc
