@@ -149,3 +149,71 @@ To unmount you only need to make sure none of the files or directories under `/d
 ```
 fusermount -u  /data/local/eecolidar_webdav/
 ```
+
+#### Configuring from an existing configfile
+
+The configuration above will generate a rclone configuration file. When a configuration file is already available, you can also use it to mount the web-dav server.
+
+Below is an example of utilizing an existing config file by adding its contents to a rclone configuration.
+
+First, we need to locate the current config file of `rclone`:
+```bash
+rclone config file
+```
+
+For example, the results can be:
+```
+Configuration file is stored at:
+/home/eecolidar/.config/rclone/rclone.conf
+```
+
+Suppose we have the existing configuration file we want to use at `/home/eecolidar/example_config.conf`. We can inspect its content by:  
+```bash
+cat /home/eecolidar/example_config.conf
+```
+
+Its content will be displayed on the screen, e.g.:
+```
+[eecolidar_new]
+type = webdav
+url = https://webdav.grid.surfsara.nl:2880/pnfs/grid.sara.nl/data/projects.nl/eecolidar/
+vendor = other
+bearer_token = SOME_VERY_VERY_LONG_TOKEN_EG_MACARON
+```
+
+As we can see, there is a configuration for a new remote repository: `eecolidar_new`. And it accesses wedav via a token. 
+
+Now, copy the contents and edit the configuration file in use. You can use your favorite text editor. Here is an example of `nano`.
+```
+nano /home/eecolidar/.config/rclone/rclone.conf
+```
+
+Then you can paste the copied contents to the end of `rclone.conf`, and save your edits.
+
+Now you successfully added the new repository! You can verify this by;
+
+```
+rclone ls eecolidar_new:
+```
+
+You should be able to see the contents in the remotes.
+
+#### Trouble shooting
+
+For Linux user, an error may occur during mounting, complaining about the `--allow-other` option:
+```
+mount helper error: fusermount: option allow_other only allowed if 'user_allow_other' is set in /etc/fuse.conf
+```
+
+As suggested in the error message, this can be solved by enabling the `user_allow_other` function in `/etc/fuse.conf`. You will need sudo rights for this:
+
+```
+sudo nano /etc/fuse.conf
+```
+
+And uncomment the `user_allow_other` line.
+
+```
+# Allow non-root users to specify the allow_other or allow_root mount options.
+#user_allow_other <-
+```
