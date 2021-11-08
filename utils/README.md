@@ -154,7 +154,13 @@ fusermount -u  /data/local/eecolidar_webdav/
 
 The configuration above will generate a rclone configuration file. When a configuration file is already available, you can also use it to mount the web-dav server.
 
-Below is an example of utilizing an existing config file by adding its contents to a rclone configuration.
+Suppose we have the existing configuration file at `/home/eecolidar/example_config.conf`. For one time mounting, you can simply use the `--config` option to mount webdav via an existing config file:
+```
+rclone --config=/home/eecolidar/example_config.conf mount eecolidar_webdav: /data/local/eecolidar_webdav/ --allow-other --vfs-cache-mode full --daemon --log-file=/data/local/eecolidar/rclone/rclone_log.out --log-level DEBUG --cache-dir /data/local/eecolidar/rclone/tmp/ --cache-db-purge --vfs-cache-max-age 20m0s --dir-cache-time 15m0s --cache-workers=6
+```
+
+
+You can also permanently config `rclone` adding the contents of `example_config.conf` to the default rclone configuration. Below is an example
 
 First, we need to locate the current config file of `rclone`:
 ```bash
@@ -167,12 +173,12 @@ Configuration file is stored at:
 /home/eecolidar/.config/rclone/rclone.conf
 ```
 
-Suppose we have the existing configuration file we want to use at `/home/eecolidar/example_config.conf`. We can inspect its content by:  
+We can inspect its content by:  
 ```bash
 cat /home/eecolidar/example_config.conf
 ```
 
-Its content will be displayed on the screen, e.g.:
+The content will be displayed on the screen, e.g.:
 ```
 [eecolidar_new]
 type = webdav
