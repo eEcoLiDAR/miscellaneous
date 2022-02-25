@@ -36,7 +36,7 @@ The feature extraction scripts follow a similar logic to the normalisation scrip
 
 ## Jupyter Notebooks
 
-There are three _Jupyter Notebooks_ which help analyse and convert the data.
+Includes _Jupyter Notebooks_ which help analyse and convert the data.
 
 ### List Analysis
 
@@ -49,6 +49,10 @@ The output of LaserChicken are _.ply_ files, one for each input tile. These file
 ### Data Verification
 
 To verify that the features are correctly extracted, the _DataVerification.ipynb_ reads the _.npz_ version of the data and prints various details for each feature. This is, then, compared with the expected details for each feature.
+
+### Splitting
+
+It uses `laspy` to split a LAS/LAZ file into smaller ones based on a target file size. Runs sub-tasks in parallel using the Dask Bag framework.  
 
 ## Data
 
